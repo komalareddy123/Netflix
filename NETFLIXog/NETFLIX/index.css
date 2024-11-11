@@ -1,0 +1,406 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  color: #fff;
+}
+.header{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),  url(heading\ image.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.logo{
+  width: 150px;
+  cursor: pointer;
+}
+nav button{
+  border: 0;
+  outline: 0;
+  background: red;
+  color: #fff;
+  padding: 7px 20px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+
+}
+select {
+  line-height: 1.25rem;
+  min-height: 16px;
+  padding-top: 0.375rem;
+  padding-right: calc(2.25rem + 0rem);
+  padding-bottom: 0.375rem;
+  padding-left: calc(0.625rem + 1rem + 0.5rem);
+  margin-top: 20px;
+  margin-right: 10px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  border-radius: 20px;
+  background-clip: padding-box;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  z-index: 1;
+}
+option {
+  font-weight: normal;
+  display: block;
+  padding-block-start: 0px;
+  padding-block-end: 1px;
+  min-block-size: 1.2em;
+  padding-inline: 2px;
+  white-space: nowrap;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+button {
+  line-height: 1.25rem;
+  min-height: 16px;
+  padding-top: 0.375rem;
+  padding-right: 1.25rem;
+  padding-bottom: 0.375rem;
+  padding-left: 1.25rem;
+  margin-right: 20px;
+  font-size: 15px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.header-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 100px;
+
+}
+.header-content h1{
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 600;
+  max-width: 650px;
+}
+.header-content h3{
+  font-weight: 400;
+  margin-bottom: 20px;
+
+}
+
+
+.email-signup{
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  overflow: hidden;
+
+}
+
+.email-signup input{
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin-left: 100px;
+
+}
+.email-signup button{
+  background: #db0001;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 20px 80px;
+}
+
+.content-section {
+  padding: 40px 20px;
+}
+
+.content-section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.content-section .movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  cursor: pointer;
+}
+
+.movie-item {
+  position: relative;
+  background-color: #333;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.movie-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.movie-item img:hover {
+  transform: scale(1.05); /* Zooms the image slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+
+
+
+.plans {
+  padding: 2em;
+}
+
+
+.plan-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 2px solid #ffffff80;
+  border-radius: 8px;
+  padding: 1.5em;
+  
+  margin: 0.5em;
+  text-align: center;
+}
+
+.plan-card {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 1.5em;
+  width: 200px;
+  margin: 0.5em;
+  text-align: center;
+  border: 2px solid #ffffff80;
+ 
+  background: linear-gradient(135deg, #ff00ff, #4beeee, #2007fd);
+  background-size: 300% 300%;
+  animation: magicColor 5s infinite linear;
+}
+
+@keyframes magicColor {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+.most-popular {
+  border: 2px solid #ffffff80;
+}
+
+.plan-cards h3 {
+  color: #fef4f4;
+}
+
+.plan-cards p {
+  margin: 0.5em 0;
+}
+.reasons{
+  padding: 2em;
+  text-align: center;
+}
+.reason-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.reason-card{
+  background-color: #333;
+  border-radius: 8px;
+  padding: 1em;
+  width: 150px;
+  margin: 0.5em;
+}
+
+
+.faq h2{
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 18px 40px;
+  font-weight: 500;
+}
+.accordion{
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+.accordion li{
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+label::after{
+  content: '+';
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+input[type="radio"]{
+  display: none;
+}
+.accordion .content{
+  background: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+  max-height: 600px;
+  padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+  transform: rotate(135deg); 
+
+}
+.faq .email-signup{
+  max-width: 600px;
+  margin: 20px auto 60px;
+}
+.faq small{
+  font-size: 13px;
+  text-align: center;
+
+} 
+
+.footer{
+  padding: 50px 15% 10px;
+  border-top: 6px solid #333;
+ 
+
+}
+.footer h2{
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.main-container {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  padding: 4px;
+  list-style-type: none;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-top: 36px;
+  margin-left: -9vh;
+}
+.main-container ul li {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 4px;
+  list-style-type: none;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,sans-serif;
+  font-weight: 400;
+}
+.main-container ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.125rem;
+}
+
+.end-select {
+  margin-top: 8vh;
+  margin-left: 20vh;
+}
+.text {
+  margin-top: 36px;
+  margin-left: 0px;
+}
+.text p {
+  top: 395vh;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 600px){
+  .logo{
+    width: 100px;
+  }
+  nav button{
+    padding: 5px 10px;
+
+  }
+  nav .language-btn{
+    padding: 4px 8px;
+  }
+  .header-content{
+    position: unset;
+    transform: none;
+    padding-top: 150px;
+  }
+  .header-content h1{
+    font-size: 30px;
+  }
+  .email-signup button{
+    font-size: 12px;
+    padding: 10px 15px;
+
+  }
+  .faq h2{
+    font-size: 20px;
+  }
+  .accordion .content{
+    font-size: 14px;
+  }
+  .accordion li label{
+    padding: 10px;
+    font-size: 14px;
+  }
+  label::after{
+    font-size: 22px;
+  }
+}
